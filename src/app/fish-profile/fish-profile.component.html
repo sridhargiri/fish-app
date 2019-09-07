@@ -1,1 +1,13 @@
-<p>fish-profile works!</p>
+<h2>Fish Profiles</h2>
+
+<div *ngFor="let fish of fishies" style="padding: 20px;">
+  <mat-card style="max-width: 400px;">
+    <mat-card-header>
+      <mat-card-title>{{fish[0]}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p>{{fish[1]}}</p>
+      <img src={{fish[2]}} style="width: 200px;">
+    </mat-card-content>
+  </mat-card>
+</div>
