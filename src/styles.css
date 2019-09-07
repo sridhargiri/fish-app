@@ -1,1 +1,228 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Global Styles */
+@import '~@angular/cdk/overlay-prebuilt.css';
+
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  color: #616161;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+}
+
+router-outlet+* {
+  padding: 0 16px;
+}
+
+#site-title {
+  font-size: 28px;
+  font-weight: lighter;
+  margin: 0;
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+}
+
+p {
+  margin: 0;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.toolbar {
+  height: 68px;
+  margin: -8px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  align-items: center;
+  background-color: #f8de7e;
+  font-weight: 600;
+}
+
+.container {
+  /* display: flex;
+  flex-direction: row; */
+  display: flex;
+  margin: 32px auto;
+  padding: 0 16px;
+  max-width: 960px;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .content {
+  display: flex;
+  margin: 32px auto;
+  padding: 0 16px;
+  max-width: 960px;
+  flex-direction: column;
+  align-items: center;
+} */
+
+/* Hyperlink */
+
+a {
+  cursor: pointer;
+  color: #f8de7e;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* Input */
+
+input {
+  font-size: 14px;
+  border-radius: 2px;
+  padding: 8px;
+  margin: 16px;
+  border: 1px solid #bdbdbd;
+}
+
+label {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  display: block;
+}
+
+/* Unordered List */
+
+ul {
+  padding-inline-start: 30px;
+  padding-inline-end: 10px;
+}
+
+/* Table */
+
+table {
+  width: 100%;
+}
+
+/* Button */
+
+.button,
+button {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 2px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #f8de7e;
+  border: none;
+}
+
+.button:hover,
+button:hover {
+  opacity: 0.8;
+  font-weight: normal;
+}
+
+.button:disabled,
+button:disabled {
+  opacity: 0.5;
+  cursor: auto;
+}
+
+/* Fancy Button */
+
+.fancy-button {
+  background-color: white;
+  color: #1976d2;
+}
+
+.fancy-button i.material-icons {
+  color: #1976d2;
+  padding-right: 4px;
+}
+
+/* Custom Classes */
+
+.search-input {
+  font-size: 18px;
+  padding: 10px;
+}
+
+.go-button {
+  font-size: 18px;
+  padding: 10px 10px;
+  margin-left: 20px;
+  border-radius: 20px;
+}
+
+/* Login Page */
+
+.login-page {
+  width: var(--content-width);
+  min-height: fit-content;
+  position: relative;
+  width: 450px;
+  margin: 5% auto 0;
+  text-align: center;
+}
+
+.loginGoogle-button {
+  width: 450px;
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.logout-button {
+  display: block;
+  margin: 5% auto 0;
+  margin-top: 0px;
+}
+
+.approve-button {
+  display: inline-block;
+  background-color: #9ccc65;
+  margin: 10px;
+  margin-left: 50px;
+  width: 80px;
+}
+
+.deny-button {
+  display: inline-block;
+  background-color: #ef5350;
+  margin: 10px;
+  margin-left: 50px;
+  width: 80px;
+}
+
+.mat-radio-button~.mat-radio-button {
+  margin-left: 16px;
+}
+
+/* Rest and Focus on a button */
+.rest {
+  border-radius: 20px;
+}
+
+.rest:focus {
+  outline: none;
+}
+
+/* Img */
+.center-page-img {
+  width: 100%;
+  max-width: 500px;
+}
