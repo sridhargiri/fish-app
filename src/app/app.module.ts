@@ -5,25 +5,26 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatCardModule } from '@angular/material/card';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FishProfileComponent } from './fish-profile/fish-profile.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
+import { FishCamComponent } from './fish-cam/fish-cam.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FishProfileComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    FishCamComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
     MatMenuModule,
     MatCardModule,
     RouterModule.forRoot([
-      { path: '', component: FishProfileComponent }
+      { path: '', component: FishProfileComponent },
+      { path: 'fish-cam', component: FishCamComponent }
     ])
   ],
   providers: [],
