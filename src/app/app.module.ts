@@ -6,6 +6,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatCardModule } from '@angular/material/card';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 import { AppComponent } from './app.component';
 import { FishProfileComponent } from './fish-profile/fish-profile.component';
@@ -28,6 +29,7 @@ import { FishSubmissionComponent } from './fish-submission/fish-submission.compo
     MatCardModule,
     ReactiveFormsModule,
     MatFormFieldModule,
+    MatInputModule,
     RouterModule.forRoot([
       { path: '', component: FishProfileComponent },
       { path: 'fish-submission', component: FishSubmissionComponent },
