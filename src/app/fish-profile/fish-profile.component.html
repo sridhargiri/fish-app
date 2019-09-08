@@ -3,11 +3,11 @@
 <div *ngFor="let fish of fishies" style="padding: 20px;">
   <mat-card style="max-width: 500px;">
     <mat-card-header>
-      <mat-card-title>{{fish[0]}}</mat-card-title>
+      <mat-card-title>{{fish.name}}</mat-card-title>
     </mat-card-header>
     <mat-card-content style="display: inline-grid; margin: 10px;">
-      <p>{{fish[1]}}</p>
-      <img src={{fish[2]}} style="max-width: 350px; margin: 10px auto 0;">
+      <p>{{fish.description}}</p>
+      <img src={{fish.img_url}} style="max-width: 350px; margin: 10px auto 0;">
     </mat-card-content>
   </mat-card>
 </div>
