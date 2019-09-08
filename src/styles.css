@@ -15,6 +15,7 @@
 
 body {
   margin: 0;
+  background-color: #fafafa;
 }
 
 router-outlet+* {
@@ -29,11 +30,15 @@ router-outlet+* {
 }
 
 h1,
-h2,
 h3,
 h4,
 h5,
 h6 {
+  margin: 8px 0;
+}
+
+h2 {
+  font-size: 24px;
   margin: 8px 0;
 }
 
@@ -46,7 +51,7 @@ p {
 }
 
 .toolbar {
-  height: 68px;
+  height: 100px;
   margin: -8px;
   padding-left: 100px;
   padding-right: 50px;
@@ -133,75 +138,6 @@ button:disabled {
   cursor: auto;
 }
 
-/* Fancy Button */
-
-.fancy-button {
-  background-color: white;
-  color: #1976d2;
-}
-
-.fancy-button i.material-icons {
-  color: #1976d2;
-  padding-right: 4px;
-}
-
-/* Custom Classes */
-
-.search-input {
-  font-size: 18px;
-  padding: 10px;
-}
-
-.go-button {
-  font-size: 18px;
-  padding: 10px 10px;
-  margin-left: 20px;
-  border-radius: 20px;
-}
-
-/* Login Page */
-
-.login-page {
-  width: var(--content-width);
-  min-height: fit-content;
-  position: relative;
-  width: 450px;
-  margin: 5% auto 0;
-  text-align: center;
-}
-
-.loginGoogle-button {
-  width: 450px;
-  margin-top: 30px;
-  display: inline-block;
-}
-
-.logout-button {
-  display: block;
-  margin: 5% auto 0;
-  margin-top: 0px;
-}
-
-.approve-button {
-  display: inline-block;
-  background-color: #9ccc65;
-  margin: 10px;
-  margin-left: 50px;
-  width: 80px;
-}
-
-.deny-button {
-  display: inline-block;
-  background-color: #ef5350;
-  margin: 10px;
-  margin-left: 50px;
-  width: 80px;
-}
-
-.mat-radio-button~.mat-radio-button {
-  margin-left: 16px;
-}
-
 /* Rest and Focus on a button */
 .rest {
   border-radius: 20px;
@@ -209,10 +145,4 @@ button:disabled {
 
 .rest:focus {
   outline: none;
-}
-
-/* Img */
-.center-page-img {
-  width: 100%;
-  max-width: 500px;
 }
